@@ -89,7 +89,7 @@ function getIcon(condition) {
     condition = condition.toLowerCase();
     if (condition === 'snow') return 'snowy.svg';
     if (condition === 'rain') return 'rainy.svg';
-    if (condition === 'clear') return 'clear.svg';
+    if (condition === 'clear') return 'day.svg';
     if (condition === 'clouds') return 'cloudy.svg';
     if (condition === 'drizzle') return 'drizzle.svg';
     if (condition === 'thunderstorm') return 'thunderstorm.svg';
@@ -133,6 +133,11 @@ function showError(msg) {
     setTimeout(() => { erroor.classList.remove('show') }, 1900)
 }
 
+const switchBtn = document.querySelector('#theme-switch');
+
+switchBtn.addEventListener('click', function(){
+    
+});
 let darkMode = false;
 
 console.log(darkMode);

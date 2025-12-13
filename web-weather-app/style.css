@@ -17,9 +17,25 @@ body {
     background-position: center;
 
 }
-
-.body.dark-mode {
+.light-mode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/background.jpg);
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+}
+.dark-mode {
     background: url(images/darkmodebackgroun.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
 }
 
 body::before {
