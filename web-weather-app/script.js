@@ -1,5 +1,3 @@
-
-
 const apiKey = "be670a1389eafd9b8736cce1a056a2cf";
 
 const cityInput = document.querySelector('.city-input');
@@ -68,6 +66,8 @@ async function fetchData(city) {
         showError("City not found");
     }
 }
+
+// time Converter function
 function timeConverter(timestamp) {
     const date = new Date(timestamp * 1000);
     const hours = date.getHours().toString().padStart(2, "0");
@@ -82,7 +82,6 @@ async function fetchForecast(lat, lon) {
 
     const dataforecast = (await response).json();
     return dataforecast;
-
 }
 
 function getIcon(condition) {
@@ -107,46 +106,39 @@ function getIcon(condition) {
 
 }
 
-searchBtn.addEventListener("click", () => {
+// search by icon
+const searchByIcon = () =>{
     const cityName = cityInput.value.trim();
     if (cityName) fetchData(cityName);
-});
+}
+searchBtn.addEventListener("click", searchByIcon);
 
-cityInput.addEventListener('keydown', function (e) {
+// search by enter
+const searchByicon = (e) => {
+if (e.key === 'Enter') {
+    const cityName = cityInput.value.trim();
+    if (cityName) fetchData(cityName)
+}
+}
+cityInput.addEventListener('keydown', searchByicon);
 
-    if (e.key === 'Enter') {
-        const cityName = cityInput.value.trim();
-
-        if (cityName) fetchData(cityName);
-    }
-    console.log(e.key);
-})
 fetchData('Casablanca');
 
-
-
+// error function message
 function showError(msg) {
     const erroor = document.querySelector('.div-error1');
     erroor.innerHTML = msg
     erroor.classList.add('show')
-
     setTimeout(() => { erroor.classList.remove('show') }, 1900)
 }
 
-const switchBtn = document.querySelector('#theme-switch');
-
-switchBtn.addEventListener('click', function(){
-    
-});
-let darkMode = false;
-
-console.log(darkMode);
-function darkModeSwitch() {
-    if (darkMode == false) {
-        darkMode = true
-    } else {
-        darkMode = false;
-    }
+// theme mode
+const switchBtn = document.querySelector('.theme-switch');
+const themeSwitch = () => {
+    document.body.classList.toggle('dark-mode')
+    document.body.classList.toggle('light-mode')
 }
+switchBtn.addEventListener('click', themeSwitch);
+
 
 
