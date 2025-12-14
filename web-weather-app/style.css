@@ -15,7 +15,7 @@ body {
     height: 100dvh;
     background-size: cover;
     background-position: center;
-
+    transition: background 0.3s ease;
 }
 .theme-switch{
   position: fixed;
@@ -38,16 +38,18 @@ body {
     height: 100dvh;
     background-size: cover;
     background-position: center;
+    transition: background 0.3s ease;
 }
 .dark-mode {
     background: url(images/darkmodebackgroun.jpg);
     display: flex;
     align-items: center;
-    justify-content: center;;
+    justify-content: center;
     width: 100%;
     height: 100dvh;
     background-size: cover;
     background-position: center;
+    transition: background 0.3s ease;
 }
 
 body::before {

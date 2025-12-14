@@ -11,6 +11,43 @@ const dataTxt = document.querySelector('.date-txt');
 const weatherStatus = document.querySelector('.condition-txxt');
 const daysContainer = document.querySelector('.days-container');
 
+cityInput.addEventListener('keyup', function(){
+    localStorage.setItem('value', cityInput.value);
+
+})
+
+
+// search by icon
+const searchByIcon = () =>{
+    const cityName = cityInput.value.trim();
+    if (cityName) fetchData(cityName);
+}
+searchBtn.addEventListener("click", searchByIcon);
+
+// search by enter
+const searchByicon = (e) => {
+if (e.key === 'Enter') {
+    const cityName = cityInput.value.trim();
+    if (cityName) fetchData(cityName)
+}}
+cityInput.addEventListener('keydown', searchByicon);
+
+// theme mode
+const switchBtn = document.querySelector('.theme-switch');
+const themeSwitch = () => {
+    document.body.classList.toggle('dark-mode')
+    document.body.classList.toggle('light-mode')
+}
+switchBtn.addEventListener('click', themeSwitch);
+
+
+// error function message
+function showError(msg) {
+    const erroor = document.querySelector('.div-error1');
+    erroor.innerHTML = msg
+    erroor.classList.add('show')
+    setTimeout(() => { erroor.classList.remove('show') }, 1900)
+}
 const date = new Date();
 const weatherConditionIMG = document.querySelector('.weather-status-img');
 async function fetchData(city) {
@@ -106,39 +143,10 @@ function getIcon(condition) {
 
 }
 
-// search by icon
-const searchByIcon = () =>{
-    const cityName = cityInput.value.trim();
-    if (cityName) fetchData(cityName);
-}
-searchBtn.addEventListener("click", searchByIcon);
 
-// search by enter
-const searchByicon = (e) => {
-if (e.key === 'Enter') {
-    const cityName = cityInput.value.trim();
-    if (cityName) fetchData(cityName)
-}
-}
-cityInput.addEventListener('keydown', searchByicon);
 
 fetchData('Casablanca');
 
-// error function message
-function showError(msg) {
-    const erroor = document.querySelector('.div-error1');
-    erroor.innerHTML = msg
-    erroor.classList.add('show')
-    setTimeout(() => { erroor.classList.remove('show') }, 1900)
-}
-
-// theme mode
-const switchBtn = document.querySelector('.theme-switch');
-const themeSwitch = () => {
-    document.body.classList.toggle('dark-mode')
-    document.body.classList.toggle('light-mode')
-}
-switchBtn.addEventListener('click', themeSwitch);
 
 
 
