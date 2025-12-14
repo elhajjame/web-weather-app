@@ -14,13 +14,13 @@ The app also includes a light and dark mode toggle for better user experience.
 ##  **Preview**
 
 <p align="center">
-  <img src="images/dark-mode-preview.png" alt="Weather App Dark Mode Preview" width="900">
+  <img src="web-weather-app/images/dark-mode-preview.png" alt="Weather App Dark Mode Preview" width="900">
 </p>
 
 ****
 
 <p align="center">
-  <img src="images/light-mode-Preview.png" alt="Weather App Light Mode Preview" width="900">
+  <img src="web-weather-app/images/light-mode-Preview.png" alt="Weather App Light Mode Preview" width="900">
 </p>
 
 ---
@@ -72,3 +72,4 @@ The app also includes a light and dark mode toggle for better user experience.
 * Error handling in user input
 * Implementing light/dark mode
 * Structuring a real-world JavaScript project
+
