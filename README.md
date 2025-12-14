@@ -37,7 +37,7 @@ The app also includes a light and dark mode toggle for better user experience.
 
 ---
 
-## 🛠️ **Technologies Used**
+##  **Technologies Used**
 
 * HTML5
 * CSS3
@@ -45,22 +45,6 @@ The app also includes a light and dark mode toggle for better user experience.
 * OpenWeatherMap API
 * Material Symbols Icons
 
----
-
-##  **Project Structure**
- Weather-App
-├── index.html
-├── style.css
-├── script.js
-├── preview.png
-└── assets/
-    └── weather/
-        ├── clear.svg
-        ├── cloudy.svg
-        ├── rainy.svg
-        ├── snowy.svg
-        ├── thunderstorm.svg
-        └── atmosphere.svg
 
 ---
 
@@ -72,4 +56,5 @@ The app also includes a light and dark mode toggle for better user experience.
 * Error handling in user input
 * Implementing light/dark mode
 * Structuring a real-world JavaScript project
+
 
