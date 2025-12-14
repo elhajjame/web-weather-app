@@ -1,4 +1,4 @@
-# 🌦️ **Weather App — JavaScript Project**
+# 🌦️ **Weather App Project**
 ---
 
 ##   **Project Overview**
@@ -56,5 +56,6 @@ The app also includes a light and dark mode toggle for better user experience.
 * Error handling in user input
 * Implementing light/dark mode
 * Structuring a real-world JavaScript project
+
 
 
