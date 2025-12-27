@@ -45,7 +45,8 @@ The app also includes a light and dark mode toggle for better user experience.
 
 ---
 
-## **What I Learned**        
+                                                                *Don't forget to starred this repository ⭐*        
+
 
 
 
