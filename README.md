@@ -1,3 +1,14 @@
+<p align="center">
+  <img src="web-weather-app/images/dark-mode-preview.png" alt="Weather App Dark Mode Preview" width="900">
+</p>
+
+****
+
+<p align="center">
+  <img src="web-weather-app/images/light-mode-Preview.png" alt="Weather App Light Mode Preview" width="900">
+</p>
+
+
 # 🌦️ **Weather App Project**
 ---
 
@@ -8,20 +19,6 @@ This project is a modern Weather web Application that allows users to search for
 It fetches live data from the OpenWeatherMap API and displays current weather conditions, temperature, wind speed, humidity, and a short-term forecast.
 
 The app also includes a light and dark mode toggle for better user experience.
-
----
-
-##  **Preview**
-
-<p align="center">
-  <img src="web-weather-app/images/dark-mode-preview.png" alt="Weather App Dark Mode Preview" width="900">
-</p>
-
-****
-
-<p align="center">
-  <img src="web-weather-app/images/light-mode-Preview.png" alt="Weather App Light Mode Preview" width="900">
-</p>
 
 ---
 
@@ -50,12 +47,8 @@ The app also includes a light and dark mode toggle for better user experience.
 
 ## **What I Learned**        
 
-* Working with real APIs using Fetch
-* Handling asynchronous JavaScript
-* DOM manipulation for dynamic UI updates
-* Error handling in user input
-* Implementing light/dark mode
-* Structuring a real-world JavaScript project
+
+
 
 
 
