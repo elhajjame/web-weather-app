@@ -42,10 +42,8 @@ The app also includes a light and dark mode toggle for better user experience.
 * OpenWeatherMap API
 * Material Symbols Icons
 
+                                                   Don't forget to starred this repository ⭐        
 
----
-
-                                                                *Don't forget to starred this repository ⭐*        
 
 
 
